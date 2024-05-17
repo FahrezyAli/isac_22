@@ -1,0 +1,110 @@
+.btn-secondary {
+    color: #11052D;
+    border: 1px solid #11052D;
+    width: max-content;
+    height: max-content;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    border: 1px solid #11052D;
+    border-radius: 6px;
+    padding: 10px 15px;
+}
+
+.add-soal {
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.title-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #11052D;
+    padding: 1.5rem 0 0.7rem 0;
+    width: 100%;
+}
+
+.title-form h1 {
+    color: #11052D;
+}
+
+.btn-secondary {
+    width: max-content;
+    height: max-content;
+    border: 1px solid black;
+    white-space: nowrap;
+}
+
+.form-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.choice {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.choice-input,
+.question {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.wrap-input {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #11052D;
+    border-radius: 8px;
+    padding: 4px;
+    width: fit-content;
+}
+
+.wrap-input input {
+    text-align: left;
+}
+
+.btn-input {
+    color: #11052D;
+
+}
+
+.view-gambar {
+    width: 100%;
+    max-width: 400px;
+}
+
+#reset {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .choice p {
+        left: -20px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .title-form {
+
+
+        flex-direction: column;
+    }
+
+    .title-form h1 {
+        white-space: nowrap;
+        font-size: 2em;
+    }
+}

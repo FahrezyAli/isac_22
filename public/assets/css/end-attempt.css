@@ -1,0 +1,80 @@
+.judul {
+    margin-top: 4rem;
+    letter-spacing: 0.15rem;
+    background: -webkit-linear-gradient(0deg, #FEFEFE -20.43%, #27D7E5 13.7%, #5C74BA 25.25%, #7447A5 45.25%, #842998 86.09%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    color: #11052D;
+    position: relative;
+}
+
+.judul::after {
+    letter-spacing: 0.15rem;
+    color: #FEFEFE;
+    content: attr(data-judul);
+    position: absolute;
+    left: 5px;
+    top: 3px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.contents {
+    display: flex;
+    gap: 3rem;
+}
+
+.description {
+    display: flex;
+    gap: 2.5rem;
+    flex: 1;
+}
+
+.thank-you {
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.image {
+    object-fit: contain;
+    object-position: bottom;
+    width: 50%;
+}
+
+.ui {
+    height: 76vh;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        align-items: center;
+    }
+
+    .judul {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .description {
+        flex-direction: column-reverse;
+    }
+
+    .thank-you h2 {
+        font-size: 24px;
+        line-height: 1.8rem;
+    }
+
+    .thank-you h4 {
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+}

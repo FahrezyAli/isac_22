@@ -1,0 +1,84 @@
+.alert {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 500px;
+    margin: 0 1rem;
+    padding: 1rem 1.25rem;
+    position: fixed;
+    top: 7rem;
+    left: 50%;
+    transform: translateX(calc(-50% - 1rem));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    border: 1px solid;
+    border-radius: 6px;
+    z-index: 19;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+    -webkit-animation: fadeout 0.8s ease-in-out 10s forwards;
+    animation: fadeout 0.8s ease-in-out 10s forwards;
+}
+
+.alert--info {
+    background-color: #E4F3FF;
+    border-color: #1C75BC;
+}
+
+.alert--danger {
+    background-color: #FEEDD4;
+    border-color: #F26232;
+}
+
+.alert--error {
+    background-color: #FFE7EC;
+    border-color: #A0213E;
+}
+
+.alert--warning {
+    background-color: #FFFBD7;
+    border-color: #FFD600;
+}
+
+.alert--success {
+    background-color: #DCFFE4;
+    border-color: #1CBC3F;
+}
+
+.alert__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.alert__content>h4 {
+    color: #250B62;
+}
+
+.alert.not-out {
+    -webkit-animation: none;
+    animation: none;
+}
+
+.alert.add-out {
+    -webkit-animation: fadeout 0.8s ease-in-out 10s forwards;
+    animation: fadeout 0.8s ease-in-out 10s forwards;
+}
+
+@-webkit-keyframes fadeout {
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+}

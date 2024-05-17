@@ -1,0 +1,124 @@
+.container {
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+}
+
+.title-section>* {
+    text-align: center;
+}
+
+.judul {
+    text-align: center;
+    letter-spacing: 0.15rem;
+    background: -webkit-linear-gradient(0deg, #FEFEFE -20.43%, #27D7E5 13.7%, #5C74BA 49.25%, #7447A5 81.25%, #842998 116.09%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    color: #11052D;
+    position: relative;
+}
+
+.judul::after {
+    letter-spacing: 0.15rem;
+    background: -webkit-linear-gradient(0deg, #FEFEFE -20.43%, #27D7E5 13.7%, #5C74BA 49.25%, #7447A5 81.25%, #842998 116.09%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px transparent;
+    content: attr(data-tim);
+    position: absolute;
+    left: 5px;
+    top: 3px;
+    width: 100%;
+}
+
+.add-anggota-form {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.image {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.view-pasFoto {
+    width: 100%;
+    border-radius: .25rem;
+}
+
+.image .btn-primary {
+    margin-top: .5rem;
+    align-self: flex-end;
+}
+
+.team-data {
+    width: calc(65% - 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+}
+
+.team .team-data div {
+    width: 100%
+}
+
+.team div input {
+    width: 300px;
+    align-self: stretch;
+    height: 30px;
+    border: none;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btns .btn-secondary {
+    width: fit-content;
+    align-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .add-anggota-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        width: 100%;
+        max-width: 240px;
+    }
+
+    .image .btn-primary {
+        align-self: center;
+    }
+
+    .team-data {
+        width: 100%;
+    }
+
+}

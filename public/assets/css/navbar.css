@@ -1,0 +1,170 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #250B62;
+    justify-content: space-around;
+    padding: 0 1.75rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.logo {
+    padding-top: 7px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.nav-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    box-sizing: border-box;
+
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-menu div {
+    padding: 20px 2.5%;
+    list-style: none;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+nav .login,
+nav .h4,
+nav .nav-list img {
+    display: none;
+}
+
+.nav-menu div:hover,
+.nav-menu div:hover a {
+    color: rgb(8, 183, 238);
+    cursor: pointer;
+    background-color: rgba(50, 16, 128, 0.7);
+    box-sizing: border-box;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 20px;
+    height: 3px;
+    background-color: aliceblue;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1300px) {
+    .nav-menu {
+        width: 50%;
+    }
+
+    .nav-list {
+        align-items: stretch;
+    }
+}
+
+@media screen and (max-width:768px) {
+    /* .login a {
+        position: absolute;
+    } */
+
+    .h4,
+    .nav-menu .nav-list img {
+        display: block;
+    }
+
+    .nav-list img {
+        padding-right: 15px;
+    }
+
+    .login img {
+        padding-right: 10px;
+    }
+
+    nav .btn-primary {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-menu {
+        padding: 60px 20px 0 30px;
+        position: absolute;
+        right: 0px;
+        height: 100vh;
+        top: 0vh;
+        background-color: #250B62;
+        display: block;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-menu div:hover,
+    .nav-menu div a:hover {
+        background: none;
+    }
+
+    .nav-menu div {
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .burger {
+        display: block;
+    }
+
+}
+
+.nav-active {
+    transform: translate(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translate(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}

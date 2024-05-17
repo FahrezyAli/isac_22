@@ -1,0 +1,124 @@
+.container {
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.title {
+    width: 80%;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.title>h1 {
+    text-align: center;
+}
+
+.title>p {
+    text-align: center;
+    color: #9B6FFF;
+    text-shadow: 0px 4px 20px #724FC1;
+}
+
+.title>.under {
+    width: fit-content;
+    padding: 0 .5rem;
+    color: rgb(40, 12, 100);
+    background: linear-gradient(to right, rgba(39, 215, 229, 100%) 0%, rgba(92, 116, 186, 20) 30%, rgba(116, 71, 165, 100%)100%, rgba(132, 41, 152, 100%) 150%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 8px transparent;
+
+}
+
+.form-container {
+    width: 80%;
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #5D5C7D;
+    border-radius: .5rem;
+    align-content: flex-end;
+}
+
+.form-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: .25rem;
+}
+
+.regis-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.form-input {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.form-section {
+    width: calc((100% - 1.5rem)/2);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+
+    .title,
+    .form-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title>h1 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .form-input {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-section {
+        width: 100%;
+    }
+
+    .form-btn {
+        align-self: center;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .form-btn>* {
+        text-align: center;
+    }
+}

@@ -1,0 +1,255 @@
+.attempt {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+
+.number-question-section {
+    width: calc(100% - 15rem);
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.number-section>* {
+    white-space: nowrap;
+}
+
+.number-section {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(37, 11, 98, 0.7);
+    padding: 1rem 1rem 1rem 1rem;
+    gap: 10px;
+    height: max-content;
+    border-radius: 6px;
+}
+
+.number-text {
+    text-align: center;
+    background-color: #321080;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.number-text span {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.flag {
+    cursor: pointer;
+}
+
+.hovering-flag {
+    filter: invert(30%) sepia(100%) saturate(7500%) hue-rotate(3deg) brightness(98%) contrast(114%);
+    color: #FF0A01;
+}
+
+.question-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+
+.form-question {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    gap: 15px;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    align-items: flex-start;
+}
+
+.gambar {
+    width: 100%;
+    max-width: 600px;
+}
+
+.choice {
+    display: flex;
+    gap: 20px;
+}
+
+.choice input[type="radio"] {
+    accent-color: #9B6FFF;
+}
+
+.reset {
+    margin-left: 0.7em;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.contact {
+    font-size: 12px;
+    align-self: flex-end;
+}
+
+.contact>a {
+    font-size: inherit;
+}
+
+.btn-navigation {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-list-section {
+    width: 15rem;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: rgba(37, 11, 98, 0.7);
+}
+
+.nav-text {
+    text-align: center;
+    background-color: #321080;
+    margin: 15px 0px;
+    width: 100%;
+}
+
+.question-list {
+    gap: .5rem;
+    display: flex;
+    height: max-content;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 9.5px;
+}
+
+.question-card {
+    width: 2rem;
+    padding: 0 0 .75rem 0;
+    border: 2px solid #FFFFFF;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.clicked-question-card {
+    background-color: #11052D;
+    border: 2px solid #08B7EE;
+}
+
+.flagged-question-card {
+    background-color: #FF0A01;
+}
+
+.number-card {
+    width: 100%;
+    /* padding-bottom: .25rem; */
+    text-align: center;
+    line-height: 27px;
+    background-color: #321080;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.time-submit {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0px 15px;
+}
+
+@media screen and (max-width: 1400px) {
+    .number-question-section {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .attempt {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        padding: 30px;
+        gap: 50px;
+    }
+
+    .number-question-section {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .question-section>.form-question {
+        width: 100%;
+    }
+
+    .question-list-section {
+        max-width: 693px;
+    }
+
+    .question-list {
+        width: max-content;
+        max-width: 100%;
+        width: 100%;
+        gap: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .question-list-section {
+        width: 100%;
+
+    }
+
+    .question-list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+        grid-gap: 10px;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .number-question-section {
+        flex-direction: column;
+
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    p,
+    * {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.7rem;
+    }
+
+    .form-question {
+        padding: 10px;
+    }
+
+    .question-list {
+        grid-template-columns: repeat(auto-fit, minmax(26px, 1fr));
+
+    }
+
+    .question-card {
+        width: 25px;
+        height: 37px;
+    }
+
+    .number-card {
+        width: 23px;
+        height: 21px;
+        line-height: 21px;
+    }
+}

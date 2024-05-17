@@ -1,0 +1,52 @@
+.page {
+    align-self: flex-end;
+    display: flex;
+    gap: .6rem;
+    align-items: flex-end;
+
+}
+
+.pagination {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.pag-arrow {
+    height: 32px;
+    width: 32px;
+    color: #11052D;
+    text-shadow: none;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.pag-arrow:hover {
+    text-decoration: none;
+}
+
+.pag-arrow.disabled {
+    opacity: .5;
+}
+
+.btn-pagination {
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-pagination>a {
+    color: #11052D;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+
+.btn-pagination.active {
+    background-color: #6ad3f3;
+}
